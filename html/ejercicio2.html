@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo CSS # 2</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .contenedor {
+            width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .header img {
+            width: 120px;
+        }
+
+        .titulo {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .navbar span {
+            margin: 0 10px;
+            font-size: 12px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .seccion {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .azul {
+            background-color: #5dade2;
+        }
+
+        .gris {
+            background-color: #ddd;
+            color: black;
+            font-weight: normal;
+        }
+
+        .naranja {
+            background-color: #f39c12;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .team img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <span>HOME</span>
+        <span>ABOUT</span>
+        <span>SERVICES</span>
+        <span>PORTFOLIO</span>
+        <span>BLOG</span>
+        <span>CONTACT</span>
+    </div>
+    
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="https://picsum.photos/900/200">
+    </div>
+
+    <!-- ABOUT -->
+    <div class="seccion">
+        <div class="box azul">ABOUT US</div>
+        <div class="box gris">
+            Texto descriptivo de la empresa o información relevante que aparece en esta sección.
+        </div>
+    </div>
+
+    <!-- TEAM -->
+    <div class="seccion">
+        <div class="box gris">
+            <div class="team">
+                <img src="https://picsum.photos/100?1">
+                <img src="https://picsum.photos/100?2">
+                <img src="https://picsum.photos/100?3">
+            </div>
+        </div>
+        <div class="box azul">OUR TEAM</div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="seccion">
+        <div class="box naranja">SERVICES</div>
+        <div class="box gris">
+            Información sobre servicios ofrecidos, desarrollo web, diseño, etc.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

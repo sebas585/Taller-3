@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo CSS # 1</title>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contenedor {
+            width: 900px;
+            margin: 40px auto;
+            border: 10px solid #333;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #d4a000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        .menu button {
+            padding: 8px 15px;
+            border: 1px solid #999;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .contenido {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #eee;
+            padding: 10px;
+            width: 25%;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+
+        .principal {
+            background-color: #eee;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .principal img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .principal button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #d4a000;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="header">
+            Power Grid Homepage
+        </div>
+
+        <div class="menu">
+            <button>Home</button>
+            <button>About</button>
+            <button>Blog</button>
+            <button>Careers</button>
+            <button>Contact Us</button>
+        </div>
+
+        <div class="contenido">
+
+            <div class="card">
+                <img src="https://picsum.photos/200/150?random=1">
+                <p>This is some awesome content that is on the page.</p>
+                <button>Go Somewhere</button>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/200/150?random=2">
+                <p>This is more content than the previous box, but less than the next.</p>
+                <button>Click Me</button>
+            </div>
+
+            <div class="principal">
+                <img src="https://picsum.photos/400/200?random=3">
+                <p>
+                    We have lots of content here to show that content can grow, and everything 
+                    can be the same size if you use flexbox. Even if this has tons of text, it 
+                    will line up with the other sections.
+                </p>
+                <button>Do Something</button>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Copyright © 2016
+        </div>
+
+    </div>
+
+</body>
+</html>
